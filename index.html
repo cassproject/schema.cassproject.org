@@ -44,6 +44,69 @@
             <p class="lead">Organize and scope competencies and other objects.</p>
             <p>A Competency Framework or simply Framework is a collection of competencies and relations between competencies in the framework and potentially between competencies in the framework and competencies in other frameworks. In practice, a Framework represents competencies related to a specific job, task, organization, career, knowledge domain, etc.</p>
             <a class="button small" data-open="Framework02">View Schema</a>
+            <div class="large reveal" id="Framework02" data-reveal>
+                <h1>Framework</h1>
+                <pre>Context:    http://schema.cassproject.org/0.2/</pre>
+                <pre>Type:       Framework</pre>
+                <pre>Extends:    <a property="rdfs:subClassOf" href="http://schema.org/Intangible">http://schema.org/Intangible</a></pre>
+                <pre>Properties: </pre>
+                <hr style="margin:0px;">
+                <div class="row">
+                    <div class="columns large-3"><b>Name</b></div>
+                    <div class="columns large-3"><a href="http://schema.org/Text">Data Type</a></div>
+                    <div class="columns large-6"><a href="http://schema.org/name">Intent</a></div>
+                    <div class="columns large-12">Description</div>
+                </div>
+                <hr style="margin:0px;">
+                <pre>from <a>http://schema.cassproject.org/0.2/Framework</a></pre>
+                <hr style="margin:0px;">
+                <div class="row" typeof="rdfs:Property" resource="http://schema.cassproject.org/0.2/competency">
+                    <link property="domainIncludes" href="http://schema.cassproject.org/0.2/Framework">
+                    <div class="columns large-3" property="rdfs:label">competency</div>
+                    <div class="columns large-3"><a property="rangeIncludes" href="http://schema.org/URL">http://schema.org/URL</a></div>
+                    <div class="columns large-6"><a property="rangeIncludes" href="http://schema.cassproject.org/0.2/Competency" data-open="Competency02">http://schema.cassproject.org/0.2/Competency</a></div>
+                    <div class="columns large-12" property="rdfs:comment">Competencies included in the Framework.</div>
+                </div>
+                <div class="row" typeof="rdfs:Property" resource="http://schema.cassproject.org/0.2/relation">
+                    <link property="domainIncludes" href="http://schema.cassproject.org/0.2/Framework">
+                    <div class="columns large-3" property="rdfs:label">relation</div>
+                    <div class="columns large-3"><a property="rangeIncludes" href="http://schema.org/URL">http://schema.org/URL</a></div>
+                    <div class="columns large-6"><a property="rangeIncludes" href="http://schema.cassproject.org/0.2/Relation" data-open="Relation02">http://schema.cassproject.org/0.2/Relation</a></div>
+                    <div class="columns large-12" property="rdfs:comment">Relations included in the Framework. May include relations to competencies outside the framework.</div>
+                </div>
+                <div class="row" typeof="rdfs:Property" resource="http://schema.cassproject.org/0.2/level">
+                    <link property="domainIncludes" href="http://schema.cassproject.org/0.2/Framework">
+                    <div class="columns large-3" property="rdfs:label">level</div>
+                    <div class="columns large-3"><a property="rangeIncludes" href="http://schema.org/URL">http://schema.org/URL</a></div>
+                    <div class="columns large-6"><a property="rangeIncludes" href="http://schema.cassproject.org/0.2/Level" data-open="Level02">http://schema.cassproject.org/0.2/Level</a></div>
+                    <div class="columns large-12" property="rdfs:comment">Levels included in the Framework.</div>
+                </div>
+                <div class="row" typeof="rdfs:Property" resource="http://schema.cassproject.org/0.2/rollupRule">
+                    <link property="domainIncludes" href="http://schema.cassproject.org/0.2/Framework">
+                    <div class="columns large-3" property="rdfs:label">rollupRule</div>
+                    <div class="columns large-3"><a property="rangeIncludes" href="http://schema.org/URL">http://schema.org/URL</a></div>
+                    <div class="columns large-6"><a property="rangeIncludes" href="http://schema.cassproject.org/0.2/RollupRule" data-open="RollupRule02">http://schema.cassproject.org/0.2/RollupRule</a></div>
+                    <div class="columns large-12" property="rdfs:comment">Rollup Rules included in the Framework.</div>
+                </div>
+                <hr style="margin:0px;">
+                <pre>from <a href="http://schema.org/Thing">http://schema.org/Thing</a></pre>
+                <hr style="margin:0px;">
+                <div class="row" typeof="rdfs:Property" resource="http://schema.org/name">
+                    <link property="domainIncludes" href="http://schema.cassproject.org/0.2/Framework">
+                    <div class="columns large-3" property="rdfs:label">name</div>
+                    <div class="columns large-3"><a property="rangeIncludes" href="http://schema.org/Text">http://schema.org/Text</a></div>
+                    <div class="columns large-6"><a href="http://schema.org/name">http://schema.org/name</a></div>
+                    <div class="columns large-12" property="rdfs:comment">Name of the Competency Framework.</div>
+                </div>
+                <div class="row" typeof="rdfs:Property" resource="http://schema.org/description">
+                    <link property="domainIncludes" href="http://schema.cassproject.org/0.2/Framework">
+                    <div class="columns large-3" property="rdfs:label">description</div>
+                    <div class="columns large-3"><a property="rangeIncludes" href="http://schema.org/Text">http://schema.org/Text</a></div>
+                    <div class="columns large-6"><a href="http://schema.org/description">http://schema.org/description</a></div>
+                    <div class="columns large-12" property="rdfs:comment">Description of the Framework.</div>
+                </div>
+                <pre><a href="http://schema.org/Thing">...</a></pre>
+            </div>
         </div>
         <div class="large-4 columns">
             <h3>Competency<h5><small>http://schema.cassproject.org/0.2/Competency</small></h5></h3>
