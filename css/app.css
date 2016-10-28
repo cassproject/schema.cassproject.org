@@ -1,3 +1,9 @@
+body
+{
+    background-color: rgb(242,242,242);
+    color: rgb(68,84,106);
+}
+
 .reveal .row {
     margin-top: .25rem;
     margin-bottom: .25rem;
