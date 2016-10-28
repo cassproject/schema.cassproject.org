@@ -4,6 +4,6 @@
     font-family: monospace, monospace;
     font-size: 1em;
 }
-[property="rdfs:label"] {
+div[property="rdfs:label"] {
     font-weight: bold;
 }
