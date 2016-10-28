@@ -7,3 +7,7 @@
 div[property="rdfs:label"] {
     font-weight: bold;
 }
+p[property="rdfs:comment"]{
+    text-align: justify;
+    text-justify: inter-word;
+}
