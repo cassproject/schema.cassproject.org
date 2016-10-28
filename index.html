@@ -461,7 +461,9 @@
     <script src="js/foundation.min.js"></script>
     <script>
         $(document).foundation();
-
+        $("a[data-open]").click(function(ev) {
+            ev.preventDefault();
+        });
     </script>
 </body>
 
