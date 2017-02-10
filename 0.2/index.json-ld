@@ -112,7 +112,7 @@
         },
         "decayFunction": {
             "@id": ["schema:Text", "ebac:EncryptedValue"]
-        },
+        }
     },
     "@graph": [
         {
