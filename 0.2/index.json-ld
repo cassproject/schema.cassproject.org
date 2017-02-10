@@ -17,9 +17,9 @@
         "description":{"@id":"schema:description"},
         "url":{"@id":"schema:url"},
         "sameAs":{"@id":"schema:sameAs"},
-        "competency":{"@id":"cass:competency","@type":"@id"},
-        "level":{"@id":"cass:level","@type":"@id"},
-        "relation":{"@id":"cass:relation","@type":"@id"}
+        "competency":{"@id":"cass:Competency","@type":"@id"},
+        "level":{"@id":"cass:Level","@type":"@id"},
+        "relation":{"@id":"cass:Relation","@type":"@id"}
     },
     "@graph": [
         {
