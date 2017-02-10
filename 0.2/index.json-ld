@@ -25,7 +25,12 @@
             "@id": "ebac:EncryptedValue"
         },
         "@owner": {
-            "@id": "ebac:@owner"
+            "@id": "ebac:@owner",
+            "@type": "https://purl.org/signature#publicKeyPem"
+        },
+        "@reader": {
+            "@id": "ebac:@reader",
+            "@type": "https://purl.org/signature#publicKeyPem"
         },
         "@signature": {
             "@id": "ebac:@signature"
@@ -43,16 +48,19 @@
             "@id": "schema:Text"
         },
         "scope": {
-            "@id": "cass:scope"
+            "@id": "cass:scope",
+            "@type": "schema:Text"
         },
         "description": {
             "@id": "schema:description"
         },
         "source": {
-            "@id": "cass:competency"
+            "@id": "cass:Competency",
+            "@type": "@id"
         },
         "target": {
-            "@id": "cass:competency"
+            "@id": "cass:Competency",
+            "@type": "@id"
         },
         "relationType": {
             "@id": "schema:Text"
