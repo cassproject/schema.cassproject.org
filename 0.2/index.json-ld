@@ -91,34 +91,34 @@
         },
         "subject": {
             "@id": "cass:subject",
-            "@type": ["https://purl.org/signature#publicKeyPem", "ebac:EncryptedValue"]
+            "@type": "ebac:EncryptedValue"
         },
         "agent": {
             "@id": "cass:agent",
-            "@type": ["https://purl.org/signature#publicKeyPem", "ebac:EncryptedValue"]
+            "@type": "ebac:EncryptedValue"
         },
         "negative": {
             "@id": "cass:negative",
-            "@type": ["schema:Boolean", "ebac:EncryptedValue"]
+            "@type": "ebac:EncryptedValue"
         },
         "confidence": {
             "@id": "schema:Float"
         },
         "evidence": {
             "@id": "cass:evidence",
-            "@type": ["schema:URL", "schema:Text", "schema:Thing"]
+            "@type": "schema:Thing"
         },
         "assertionDate": {
             "@id": "cass:assertionDate",
-            "@type": ["schema:Integer", "ebac:EncryptedValue"]
+            "@type": "ebac:EncryptedValue"
         },
         "expirationDate": {
             "@id": "cass:expirationDate",
-            "@type": ["schema:Integer", "ebac:EncryptedValue"]
+            "@type": "ebac:EncryptedValue"
         },
         "decayFunction": {
             "@id": "cass:decayFunction",
-            "@type": ["schema:Text", "ebac:EncryptedValue"]
+            "@type": "ebac:EncryptedValue"
         }
     },
     "@graph": [
