@@ -90,28 +90,35 @@
             "@type": "@id"
         },
         "subject": {
-            "@id": ["https://purl.org/signature#publicKeyPem", "ebac:EncryptedValue"]
+            "@id": "cass:subject",
+            "@type": ["https://purl.org/signature#publicKeyPem", "ebac:EncryptedValue"]
         },
         "agent": {
-            "@id": ["https://purl.org/signature#publicKeyPem", "ebac:EncryptedValue"]
+            "@id": "cass:agent",
+            "@type": ["https://purl.org/signature#publicKeyPem", "ebac:EncryptedValue"]
         },
         "negative": {
-            "@id": ["schema:Boolean", "ebac:EncryptedValue"]
+            "@id": "cass:negative",
+            "@type": ["schema:Boolean", "ebac:EncryptedValue"]
         },
         "confidence": {
             "@id": "schema:Float"
         },
         "evidence": {
-            "@id": ["schema:URL", "schema:Text", "schema:Thing"]
+            "@id": "cass:evidence",
+            "@type": ["schema:URL", "schema:Text", "schema:Thing"]
         },
         "assertionDate": {
-            "@id": ["schema:Integer", "ebac:EncryptedValue"]
+            "@id": "cass:assertionDate",
+            "@type": ["schema:Integer", "ebac:EncryptedValue"]
         },
         "expirationDate": {
-            "@id": ["schema:Integer", "ebac:EncryptedValue"]
+            "@id": "cass:expirationDate",
+            "@type": ["schema:Integer", "ebac:EncryptedValue"]
         },
         "decayFunction": {
-            "@id": ["schema:Text", "ebac:EncryptedValue"]
+            "@id": "cass:decayFunction",
+            "@type": ["schema:Text", "ebac:EncryptedValue"]
         }
     },
     "@graph": [
