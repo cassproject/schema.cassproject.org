@@ -4,18 +4,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="120x120" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
     <meta name="apple-mobile-web-app-title" content="CASS Schema">
     <meta name="application-name" content="CASS Schema">
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CASS Schema</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="../css/foundation.css" />
+    <link rel="stylesheet" href="../css/app.css" />
 </head>
 
 <body>
@@ -29,16 +29,22 @@
     </div>
 
     <div class="row">
-        <a style="float:right;" href="http://linter.structured-data.org/?url=http:%2F%2Fschema.cassproject.org"><img width="100px" src="img/2000px-Valid_XHTML+RDFa.svg.png">
+        <a style="float:right;" href="http://linter.structured-data.org/?url=http:%2F%2Fschema.cassproject.org/0.2/display.html"><img width="100px" src="../img/2000px-Valid_XHTML+RDFa.svg.png">
             <br>
             <center>Parse Me</center>
         </a>
-        <h1>CASS Schema</h1>
+        <h1>
+        	CASS Schema
+        	<select id="versionSelect" style="width:10rem; vertical-align:bottom;">
+        		<option value="0.3">Version 0.3</option>
+        		<option value="0.2" selected>Version 0.2</option>
+        	</select>
+        </h1>
         <p class="lead">Looking to understand the CASS Object Model? You came to the right place.</p>
     </div>
     <div class="row">
         <hr>
-        <a style="float:right;" href="http://schema.cassproject.org/0.2/"><img width="100px" src="img/json-ld-1468496834.jpg">
+        <a style="float:right;" href="http://schema.cassproject.org/0.2/"><img width="100px" src="../img/json-ld-1468496834.jpg">
             <br>
             <center>Schema</center>
         </a>
@@ -468,8 +474,8 @@
     </div>
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/foundation.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/foundation.min.js"></script>
     <script>
         $(document).foundation();
         $("a[data-open]").click(function(ev) {
@@ -478,6 +484,15 @@
         if (location.hash != null && location.hash != "")
             $(location.hash).trigger('click');
 
+        $(document).ready(function(){
+        	$("#versionSelect").change(function(){
+        		var version = $("#versionSelect").val();
+        		
+        		if(version == "0.3"){
+        			window.location.href = "http://schema.cassproject.org";
+        		}
+        	})
+        })
     </script>
 </body>
 
