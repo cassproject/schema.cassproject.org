@@ -53,6 +53,14 @@
         "validThrough": {
             "@id": "schema:validThrough"
         },
+	"gemq:isChildOf": {
+	    "@id": "gemq:isChildOf",
+	    "@type": "@id"
+	},
+	"gemq:hasChild": {
+	    "@id": "gemq:hasChild",
+	    "@type": "@id"
+	},
 	"asn:narrowsAlignment": {
 	    "@id": "asn:narrowsAlignment",
 	    "@type": "@id"

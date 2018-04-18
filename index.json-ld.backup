@@ -1,19 +1,29 @@
 {
     "@context": {
-	"@vocab": "http://schema.cassproject.org/0.3/",
-        "ceasn": "http://purl.org/ctdlasn/terms/",
-	"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "cass": "http://schema.cassproject.org/0.3/",
+        "cass": "http://schema.cassproject.org/0.2/",
         "ebac": "http://schema.cassproject.org/kbac/0.2/",
-        "general": "http://schema.eduworks.com/general/0.3/",
+        "general": "http://schema.eduworks.com/general/0.2/",
         "schema": "http://schema.org/",
-	"asn": "http://purl.org/ASN/schema/core/",
-	"dc":"http://purl.org/dc/elements/1.1/",
-	"gemq":"http://purl.org/gem/qualifiers/",
-	"loc":"http://www.loc.gov/loc.terms/relators/",
-	"dcterms":"http://purl.org/dc/terms/",
-	"skos":"http://www.w3.org/2004/02/skos/core#",
+	"Assertion": {
+	    "@id": "cass:Assertion"
+	},
+        "Competency": {
+            "@id": "cass:Competency"
+        },
+        "Level": {
+            "@id": "cass:Level"
+        },
+        "Framework": {
+            "@id": "cass:Framework"
+        },
+        "Relation": {
+            "@id": "cass:Relation"
+        },
+        "RollupRule": {
+            "@id": "cass:RollupRule"
+        },
         "EncryptedValue": {
             "@id": "ebac:EncryptedValue"
         },
@@ -37,17 +47,28 @@
         "title": {
             "@id": "schema:title"
         },
-        "weight": {
-            "@id": "ceasn:weight"
+        "rule": {
+            "@id": "cass:rule",
+            "@type": "schema:Text"
         },
-        "creator": {
-            "@id": "schema:creator"
-        },
-        "author": {
-            "@id": "schema:author"
+        "scope": {
+            "@id": "cass:scope",
+            "@type": "schema:Text"
         },
         "description": {
             "@id": "schema:description"
+        },
+        "source": {
+            "@id": "cass:source",
+            "@type": "cass:Competency"
+        },
+        "target": {
+            "@id": "cass:target",
+            "@type": "cass:Competency"
+        },
+        "relationType": {
+            "@id": "cass:relationType",
+            "@type": "schema:Text"
         },
         "validFrom": {
             "@id": "schema:validFrom"
@@ -61,20 +82,9 @@
         "sameAs": {
             "@id": "schema:sameAs"
         },
-        "source": {
-            "@id": "cass:source",
-            "@type": "@id"
-        },
-        "target": {
-            "@id": "cass:target",
-            "@type": "@id"
-        },
         "competency": {
             "@id": "cass:competency",
             "@type": "@id"
-        },
-        "Competency": {
-            "@id": "cass:Competency"
         },
         "framework": {
             "@id": "cass:framework",
@@ -92,6 +102,9 @@
             "@id": "cass:rollupRule",
             "@type": "@id"
         },
+        "subject": "cass:subject",
+        "agent": "cass:agent",
+        "negative": "cass:negative",
         "confidence": {
             "@id": "cass:confidence",
 	    "@type": "schema:Float"
@@ -100,16 +113,28 @@
             "@id": "cass:evidence",
             "@type": "schema:Thing"
         },
-	"sameAs": {
-	    "@id":"schema:sameAs"
+        "assertionDate": "cass:assertionDate",
+        "expirationDate": "cass:expirationDate",
+        "decayFunction": "cass:decayFunction",
+	"rule":{
+	    "@id":"cass:rule",
+	    "@type":"schema:Text"
+	},
+	"title":{
+	    "@id":"cass:title",
+	    "@type":"schema:Text"
+	},
+	"performance":{
+	    "@id":"cass:performance",
+	    "@type":"schema:Text"
 	}
     },
     "@graph": [
         {
-            "@id": "http://schema.cassproject.org/0.3/Level/title",
+            "@id": "http://schema.cassproject.org/0.2/Level/title",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Level"
+                "@id": "http://schema.cassproject.org/0.2/Level"
             },
             "http://schema.org/rangeIncludes": [
                 {
@@ -132,7 +157,7 @@
             "@id": "http://schema.org/url",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Competency"
+                "@id": "http://schema.cassproject.org/0.2/Competency"
             },
             "http://schema.org/rangeIncludes": {
                 "@id": "http://schema.org/URL"
@@ -147,17 +172,17 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Assertion/level",
+            "@id": "http://schema.cassproject.org/0.2/Assertion/level",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Assertion"
+                "@id": "http://schema.cassproject.org/0.2/Assertion"
             },
             "http://schema.org/rangeIncludes": [
                 {
                     "@id": "http://schema.org/URL"
                 },
                 {
-                    "@id": "http://schema.cassproject.org/0.3/Level"
+                    "@id": "http://schema.cassproject.org/0.2/Level"
                 }
             ],
             "rdfs:comment": {
@@ -170,17 +195,17 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Assertion/negative",
+            "@id": "http://schema.cassproject.org/0.2/Assertion/negative",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Assertion"
+                "@id": "http://schema.cassproject.org/0.2/Assertion"
             },
             "http://schema.org/rangeIncludes": [
                 {
                     "@id": "https://schema.org/Boolean"
                 },
                 {
-                    "@id": "http://schema.eduworks.com/ebac/0.3/EncryptedValue"
+                    "@id": "http://schema.eduworks.com/ebac/0.2/EncryptedValue"
                 }
             ],
             "rdfs:comment": {
@@ -197,16 +222,16 @@
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": [
                 {
-                    "@id": "http://schema.cassproject.org/0.3/Competency"
+                    "@id": "http://schema.cassproject.org/0.2/Competency"
                 },
                 {
-                    "@id": "http://schema.cassproject.org/0.3/Level"
+                    "@id": "http://schema.cassproject.org/0.2/Level"
                 },
                 {
-                    "@id": "http://schema.cassproject.org/0.3/RollupRule"
+                    "@id": "http://schema.cassproject.org/0.2/RollupRule"
                 },
                 {
-                    "@id": "http://schema.cassproject.org/0.3/Framework"
+                    "@id": "http://schema.cassproject.org/0.2/Framework"
                 }
             ],
             "http://schema.org/rangeIncludes": {
@@ -236,7 +261,7 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Relation",
+            "@id": "http://schema.cassproject.org/0.2/Relation",
             "@type": "rdfs:Class",
             "rdfs:comment": {
                 "@language": "en",
@@ -247,18 +272,18 @@
                 "@value": "Relation"
             },
             "rdfs:subClassOf": {
-                "@id": "http://schema.org/CreativeWork"
+                "@id": "http://schema.org/Intangible"
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Framework/relation",
+            "@id": "http://schema.cassproject.org/0.2/Framework/relation",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Framework"
+                "@id": "http://schema.cassproject.org/0.2/Framework"
             },
             "http://schema.org/rangeIncludes": [
                 {
-                    "@id": "http://schema.cassproject.org/0.3/Relation"
+                    "@id": "http://schema.cassproject.org/0.2/Relation"
                 },
                 {
                     "@id": "http://schema.org/URL"
@@ -274,10 +299,10 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Assertion/confidence",
+            "@id": "http://schema.cassproject.org/0.2/Assertion/confidence",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Assertion"
+                "@id": "http://schema.cassproject.org/0.2/Assertion"
             },
             "http://schema.org/rangeIncludes": {
                 "@id": "http://schema.org/Float"
@@ -292,17 +317,17 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Framework/rollupRule",
+            "@id": "http://schema.cassproject.org/0.2/Framework/rollupRule",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Framework"
+                "@id": "http://schema.cassproject.org/0.2/Framework"
             },
             "http://schema.org/rangeIncludes": [
                 {
                     "@id": "http://schema.org/URL"
                 },
                 {
-                    "@id": "http://schema.cassproject.org/0.3/RollupRule"
+                    "@id": "http://schema.cassproject.org/0.2/RollupRule"
                 }
             ],
             "rdfs:comment": {
@@ -315,14 +340,14 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Assertion/decayFunction",
+            "@id": "http://schema.cassproject.org/0.2/Assertion/decayFunction",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Assertion"
+                "@id": "http://schema.cassproject.org/0.2/Assertion"
             },
             "http://schema.org/rangeIncludes": [
                 {
-                    "@id": "http://schema.eduworks.com/ebac/0.3/EncryptedValue"
+                    "@id": "http://schema.eduworks.com/ebac/0.2/EncryptedValue"
                 },
                 {
                     "@id": "http://schema.org/Text"
@@ -338,14 +363,14 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Assertion/competency",
+            "@id": "http://schema.cassproject.org/0.2/Assertion/competency",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Assertion"
+                "@id": "http://schema.cassproject.org/0.2/Assertion"
             },
             "http://schema.org/rangeIncludes": [
                 {
-                    "@id": "http://schema.cassproject.org/0.3/Competency"
+                    "@id": "http://schema.cassproject.org/0.2/Competency"
                 },
                 {
                     "@id": "http://schema.org/URL"
@@ -361,7 +386,7 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Assertion",
+            "@id": "http://schema.cassproject.org/0.2/Assertion",
             "@type": "rdfs:Class",
             "rdfs:comment": {
                 "@language": "en",
@@ -372,14 +397,14 @@
                 "@value": "Assertion"
             },
             "rdfs:subClassOf": {
-                "@id": "http://schema.org/CreativeWork"
+                "@id": "http://schema.org/Intangible"
             }
         },
         {
             "@id": "http://schema.org/validFrom",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Relation"
+                "@id": "http://schema.cassproject.org/0.2/Relation"
             },
             "http://schema.org/rangeIncludes": [
                 {
@@ -399,14 +424,14 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/RollupRule/competency",
+            "@id": "http://schema.cassproject.org/0.2/RollupRule/competency",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/RollupRule"
+                "@id": "http://schema.cassproject.org/0.2/RollupRule"
             },
             "http://schema.org/rangeIncludes": [
                 {
-                    "@id": "http://schema.cassproject.org/0.3/Competency"
+                    "@id": "http://schema.cassproject.org/0.2/Competency"
                 },
                 {
                     "@id": "http://schema.org/URL"
@@ -422,14 +447,14 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Framework/competency",
+            "@id": "http://schema.cassproject.org/0.2/Framework/competency",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Framework"
+                "@id": "http://schema.cassproject.org/0.2/Framework"
             },
             "http://schema.org/rangeIncludes": [
                 {
-                    "@id": "http://schema.cassproject.org/0.3/Competency"
+                    "@id": "http://schema.cassproject.org/0.2/Competency"
                 },
                 {
                     "@id": "http://schema.org/URL"
@@ -445,7 +470,7 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/RollupRule",
+            "@id": "http://schema.cassproject.org/0.2/RollupRule",
             "@type": "rdfs:Class",
             "rdfs:comment": {
                 "@language": "en",
@@ -456,7 +481,7 @@
                 "@value": "RollupRule"
             },
             "rdfs:subClassOf": {
-                "@id": "http://schema.org/CreativeWork"
+                "@id": "http://schema.org/Intangible"
             }
         },
         {
@@ -464,16 +489,16 @@
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": [
                 {
-                    "@id": "http://schema.cassproject.org/0.3/Competency"
+                    "@id": "http://schema.cassproject.org/0.2/Competency"
                 },
                 {
-                    "@id": "http://schema.cassproject.org/0.3/Level"
+                    "@id": "http://schema.cassproject.org/0.2/Level"
                 },
                 {
-                    "@id": "http://schema.cassproject.org/0.3/RollupRule"
+                    "@id": "http://schema.cassproject.org/0.2/RollupRule"
                 },
                 {
-                    "@id": "http://schema.cassproject.org/0.3/Framework"
+                    "@id": "http://schema.cassproject.org/0.2/Framework"
                 }
             ],
             "http://schema.org/rangeIncludes": {
@@ -503,14 +528,14 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Assertion/subject",
+            "@id": "http://schema.cassproject.org/0.2/Assertion/subject",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Assertion"
+                "@id": "http://schema.cassproject.org/0.2/Assertion"
             },
             "http://schema.org/rangeIncludes": [
                 {
-                    "@id": "http://schema.eduworks.com/ebac/0.3/EncryptedValue"
+                    "@id": "http://schema.eduworks.com/ebac/0.2/EncryptedValue"
                 },
                 {
                     "@id": "https://purl.org/signature#publicKeyPem"
@@ -526,10 +551,10 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/RollupRule/rule",
+            "@id": "http://schema.cassproject.org/0.2/RollupRule/rule",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/RollupRule"
+                "@id": "http://schema.cassproject.org/0.2/RollupRule"
             },
             "http://schema.org/rangeIncludes": {
                 "@id": "http://schema.org/Text"
@@ -544,10 +569,10 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Competency/scope",
+            "@id": "http://schema.cassproject.org/0.2/Competency/scope",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Competency"
+                "@id": "http://schema.cassproject.org/0.2/Competency"
             },
             "http://schema.org/rangeIncludes": {
                 "@id": "http://schema.org/Text"
@@ -562,14 +587,14 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Level/competency",
+            "@id": "http://schema.cassproject.org/0.2/Level/competency",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Level"
+                "@id": "http://schema.cassproject.org/0.2/Level"
             },
             "http://schema.org/rangeIncludes": [
                 {
-                    "@id": "http://schema.cassproject.org/0.3/Competency"
+                    "@id": "http://schema.cassproject.org/0.2/Competency"
                 },
                 {
                     "@id": "http://schema.org/URL"
@@ -585,14 +610,14 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Relation/target",
+            "@id": "http://schema.cassproject.org/0.2/Relation/target",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Relation"
+                "@id": "http://schema.cassproject.org/0.2/Relation"
             },
             "http://schema.org/rangeIncludes": [
                 {
-                    "@id": "http://schema.cassproject.org/0.3/Competency"
+                    "@id": "http://schema.cassproject.org/0.2/Competency"
                 },
                 {
                     "@id": "http://schema.org/URL"
@@ -608,14 +633,14 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Assertion/assertionDate",
+            "@id": "http://schema.cassproject.org/0.2/Assertion/assertionDate",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Assertion"
+                "@id": "http://schema.cassproject.org/0.2/Assertion"
             },
             "http://schema.org/rangeIncludes": [
                 {
-                    "@id": "http://schema.eduworks.com/ebac/0.3/EncryptedValue"
+                    "@id": "http://schema.eduworks.com/ebac/0.2/EncryptedValue"
                 },
                 {
                     "@id": "http://schema.org/Integer"
@@ -637,17 +662,17 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Framework/level",
+            "@id": "http://schema.cassproject.org/0.2/Framework/level",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Framework"
+                "@id": "http://schema.cassproject.org/0.2/Framework"
             },
             "http://schema.org/rangeIncludes": [
                 {
                     "@id": "http://schema.org/URL"
                 },
                 {
-                    "@id": "http://schema.cassproject.org/0.3/Level"
+                    "@id": "http://schema.cassproject.org/0.2/Level"
                 }
             ],
             "rdfs:comment": {
@@ -660,7 +685,7 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Framework",
+            "@id": "http://schema.cassproject.org/0.2/Framework",
             "@type": "rdfs:Class",
             "rdfs:comment": {
                 "@language": "en",
@@ -671,18 +696,18 @@
                 "@value": "Framework"
             },
             "rdfs:subClassOf": {
-                "@id": "http://schema.org/CreativeWork"
+                "@id": "http://schema.org/Intangible"
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Relation/source",
+            "@id": "http://schema.cassproject.org/0.2/Relation/source",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Relation"
+                "@id": "http://schema.cassproject.org/0.2/Relation"
             },
             "http://schema.org/rangeIncludes": [
                 {
-                    "@id": "http://schema.cassproject.org/0.3/Competency"
+                    "@id": "http://schema.cassproject.org/0.2/Competency"
                 },
                 {
                     "@id": "http://schema.org/URL"
@@ -698,17 +723,17 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Assertion/framework",
+            "@id": "http://schema.cassproject.org/0.2/Assertion/framework",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Assertion"
+                "@id": "http://schema.cassproject.org/0.2/Assertion"
             },
             "http://schema.org/rangeIncludes": [
                 {
                     "@id": "http://schema.org/URL"
                 },
                 {
-                    "@id": "http://schema.cassproject.org/0.3/Framework"
+                    "@id": "http://schema.cassproject.org/0.2/Framework"
                 }
             ],
             "rdfs:comment": {
@@ -721,14 +746,14 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Assertion/expirationDate",
+            "@id": "http://schema.cassproject.org/0.2/Assertion/expirationDate",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Assertion"
+                "@id": "http://schema.cassproject.org/0.2/Assertion"
             },
             "http://schema.org/rangeIncludes": [
                 {
-                    "@id": "http://schema.eduworks.com/ebac/0.3/EncryptedValue"
+                    "@id": "http://schema.eduworks.com/ebac/0.2/EncryptedValue"
                 },
                 {
                     "@id": "http://schema.org/Integer"
@@ -747,7 +772,7 @@
             "@id": "http://schema.org/validThrough",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Relation"
+                "@id": "http://schema.cassproject.org/0.2/Relation"
             },
             "http://schema.org/rangeIncludes": [
                 {
@@ -767,17 +792,17 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Assertion/evidence",
+            "@id": "http://schema.cassproject.org/0.2/Assertion/evidence",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Assertion"
+                "@id": "http://schema.cassproject.org/0.2/Assertion"
             },
             "http://schema.org/rangeIncludes": [
                 {
                     "@id": "http://schema.org/Thing"
                 },
                 {
-                    "@id": "http://schema.eduworks.com/ebac/0.3/EncryptedValue"
+                    "@id": "http://schema.eduworks.com/ebac/0.2/EncryptedValue"
                 },
                 {
                     "@id": "http://schema.org/Text"
@@ -796,7 +821,7 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Competency",
+            "@id": "http://schema.cassproject.org/0.2/Competency",
             "@type": "rdfs:Class",
             "rdfs:comment": {
                 "@language": "en",
@@ -807,11 +832,11 @@
                 "@value": "Competency"
             },
             "rdfs:subClassOf": {
-                "@id": "http://schema.org/CreativeWork"
+                "@id": "http://schema.org/Intangible"
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Level",
+            "@id": "http://schema.cassproject.org/0.2/Level",
             "@type": "rdfs:Class",
             "rdfs:comment": {
                 "@language": "en",
@@ -822,18 +847,18 @@
                 "@value": "Level"
             },
             "rdfs:subClassOf": {
-                "@id": "http://schema.org/CreativeWork"
+                "@id": "http://schema.org/Intangible"
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Assertion/agent",
+            "@id": "http://schema.cassproject.org/0.2/Assertion/agent",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Assertion"
+                "@id": "http://schema.cassproject.org/0.2/Assertion"
             },
             "http://schema.org/rangeIncludes": [
                 {
-                    "@id": "http://schema.eduworks.com/ebac/0.3/EncryptedValue"
+                    "@id": "http://schema.eduworks.com/ebac/0.2/EncryptedValue"
                 },
                 {
                     "@id": "https://purl.org/signature#publicKeyPem"
@@ -849,14 +874,14 @@
             }
         },
         {
-            "@id": "http://schema.cassproject.org/0.3/Relation/relationType",
+            "@id": "http://schema.cassproject.org/0.2/Relation/relationType",
             "@type": "rdfs:Property",
             "http://schema.org/domainIncludes": {
-                "@id": "http://schema.cassproject.org/0.3/Relation"
+                "@id": "http://schema.cassproject.org/0.2/Relation"
             },
             "http://schema.org/rangeIncludes": [
                 {
-                    "@id": "http://schema.cassproject.org/0.3/RelationType"
+                    "@id": "http://schema.cassproject.org/0.2/RelationType"
                 },
                 {
                     "@id": "http://schema.org/Text"
