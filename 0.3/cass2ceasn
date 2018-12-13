@@ -101,7 +101,7 @@
 	"schema:license":{
 		"@id":"ceasn:license","@type":"@id"
 	},
-	"schema:publisher":{
+	"ceasn:publisher":{
 		"@id":"ceasn:publisher"
 	},
 	"dc:rights":{
@@ -144,7 +144,7 @@
 	    "@id": "ceasn:prerequisiteAlignment",
 	    "@type": "@id"
 	},
-	"ceasn:publisherName":{
+	"schema:publisher":{
 		"@id":"ceasn:publisherName","@language":"en-US"
 	},
 	"skos:relatedMatch": {
