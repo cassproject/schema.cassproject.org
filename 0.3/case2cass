@@ -60,9 +60,6 @@
     "language": {
       "@id": "schema:inLanguage"
     },
-    "licenseURI": {
-      "@id": "schema:license"
-    },
     "statusStartDate": {
       "@id": "schema:datePublished"
     },

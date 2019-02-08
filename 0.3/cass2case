@@ -1,9 +1,9 @@
 {
   "@context": {
-    "@vocab": "http://schema.imsglobal.org/ims/case/v1p0/",
+    "@vocab": "https://purl.imsglobal.org/spec/case/v1p0/vocab#",
     "cass": "http://schema.cassproject.org/0.3/",
-    "case": "http://schema.imsglobal.org/ims/case/v1p0/",
-    "oldcase": "http://schema.eduworks.com/ims/case/v1p0/",
+    "case": "https://purl.imsglobal.org/spec/case/v1p0/vocab#",
+    "oldcase": "https://purl.imsglobal.org/spec/case/v1p0/vocab#",
     "ceasn": "http://purl.org/ctdlasn/terms/",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -17,11 +17,18 @@
     "loc": "http://www.loc.gov/loc.terms/relators/",
     "dcterms": "http://purl.org/dc/terms/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
     "schema:identifier": {
-      "@id": "case:identifier"
+      "@id": "identifier"
+    },
+    "@owner": {
+      "@id": "cass:@owner"
+    },
+    "@signature": {
+      "@id": "cass:@signature"
     },
     "schema:dateModified": {
-      "@id": "case:lastChangeDateTime"
+      "@id": "case:lastChangeDateTime","@type":"xsd:dateTime"
     },
     "Framework":{
       "@id":"case:CFDocument"
@@ -49,7 +56,7 @@
       "@id":"case:humanCodingScheme"
     },
     "schema:keywords": {
-      "@id": "case:subject"
+      "@id": "case:subject","@type":"xsd:normalizedString"
     },
     "schema:educationalAlignment": {
       "@id": "case:subjectURI"
@@ -70,37 +77,34 @@
       "@id": "case:CFItemType"
     },
     "schema:name": {
-      "@id": "case:title"
+      "@id": "case:title","@type":"xsd:normalizedString"
     },
     "name": {
-      "@id": "case:title"
+      "@id": "case:title","@type":"xsd:normalizedString"
     },
     "schema:creator": {
-      "@id": "case:creator"
+      "@id": "case:creator","@type":"xsd:normalizedString"
     },
     "schema:description": {
-      "@id": "case:description"
+      "@id": "case:description","@type":"xsd:string"
     },
     "description": {
-      "@id": "case:description"
+      "@id": "case:description","@type":"xsd:string"
     },
     "refxxerence": {
       "@id": "schema:AlignmentObject"
     },
     "adoptionStatus": {
-      "@id": "case:adoptionStatus"
+      "@id": "case:adoptionStatus","@type":"xsd:normalizedString"
     },
     "version": {
-      "@id": "schema:version"
+      "@id": "schema:version","@type":"xsd:normalizedString"
     },
     "schema:inLanguage": {
       "@id": "case:language"
     },
     "language": {
       "@id": "schema:inLanguage"
-    },
-    "licenseURI": {
-      "@id": "schema:license"
     },
     "statusStartDate": {
       "@id": "schema:datePublished"
@@ -112,10 +116,10 @@
       "@id": "ceasn:codedNotation"
     },
     "fullStatement": {
-      "@id": "schema:name"
+      "@id": "schema:name","@type":"xsd:normalizedString"
     },
     "CFItemType": {
-      "@id": "case:CFItemType"
+      "@id": "case:CFItemType","@type":"xsd:normalizedString"
     },
     "educationLevel": {
       "@id": "schema:educationalAlignment"
@@ -123,11 +127,11 @@
     "Preceeds": {
       "@id": "cass:target"
     },
-    "conceptKeywords": {
-      "@id": "schema:keywords"
+    "subject": {
+      "@id": "case:subject","@type":"xsd:normalizedString"
     },
     "notes": {
-      "@id": "schema:description"
+      "@id": "schema:description","@type":"xsd:string"
     },
     "associationType": {
       "@id": "cass:relationType"
