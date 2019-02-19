@@ -173,6 +173,9 @@
 		"dcterms:title": {
 			"@id": "ceasn:name",
 			"@language": "en-US"
+		},
+		"ceterms:ctid": {
+			"@id": "ceterms:ctid"
 		}
 	}
 }

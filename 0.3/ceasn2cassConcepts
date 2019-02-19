@@ -142,6 +142,9 @@
 		"ceasn:name": {
 			"@id": "dcterms:title",
 			"@container": "@language"
+		},
+		"ceterms:ctid": {
+			"@id": "ceterms:ctid"
 		}
 	}
 }
