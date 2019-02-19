@@ -18,10 +18,10 @@
 			"@id": "ebac:EncryptedValue"
 		},
 		"skos:ConceptScheme": {
-			"@id": "cass:ConceptScheme"
+			"@id": "skos:ConceptScheme"
 		},
 		"skos:Concept": {
-			"@id": "cass:Concept"
+			"@id": "skos:Concept"
 		},
 		"@owner": {
 			"@id": "ebac:@owner",
@@ -42,7 +42,8 @@
 			"@container": "@language"
 		},
 		"skos:broader": {
-			"@id": "skos:broader"
+			"@id": "skos:broader",
+			"@type": "@id"
 		},
 		"skos:broadMatch": {
 			"@id": "skos:broadMatch"
@@ -66,10 +67,12 @@
 			"@container": "@language"
 		},
 		"skos:inScheme": {
-			"@id": "skos:inScheme"
+			"@id": "skos:inScheme",
+			"@type": "@id"
 		},
 		"skos:narrower": {
-			"@id": "skos:narrower"
+			"@id": "skos:narrower",
+			"@type": "@id"
 		},
 		"skos:narrowMatch": {
 			"@id": "skos:narrowMatch"
@@ -90,7 +93,8 @@
 			"@id": "skos:relatedMatch"
 		},
 		"skos:topConceptOf": {
-			"@id": "skos:topConceptOf"
+			"@id": "skos:topConceptOf",
+			"@type": "@id"
 		},
 		"ceasn:conceptKeyword": {
 			"@id": "ceasn:conceptKeyword",
@@ -110,7 +114,8 @@
 			"@container": "@language"
 		},
 		"skos:hasTopConcept": {
-			"@id": "skos:hasTopConcept"
+			"@id": "skos:hasTopConcept",
+			"@type": "@id"
 		},
 		"skos:historyNote": {
 			"@id": "skos:historyNote",
