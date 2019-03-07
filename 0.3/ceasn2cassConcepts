@@ -1,0 +1,155 @@
+{
+	"@context": {
+		"@vocab": "http://schema.cassproject.org/0.3/",
+		"ceasn": "http://purl.org/ctdlasn/terms/",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"cass": "http://schema.cassproject.org/0.3/",
+		"ebac": "http://schema.cassproject.org/kbac/0.2/",
+		"general": "http://schema.eduworks.com/general/0.3/",
+		"schema": "http://schema.org/",
+		"asn": "http://purl.org/ASN/schema/core/",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"gemq": "http://purl.org/gem/qualifiers/",
+		"loc": "http://www.loc.gov/loc.terms/relators/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"skos": "http://www.w3.org/2004/02/skos/core#",
+		"EncryptedValue": {
+			"@id": "ebac:EncryptedValue"
+		},
+		"skos:ConceptScheme": {
+			"@id": "skos:ConceptScheme"
+		},
+		"skos:Concept": {
+			"@id": "skos:Concept"
+		},
+		"@owner": {
+			"@id": "ebac:@owner",
+			"@type": "https://purl.org/signature#publicKeyPem"
+		},
+		"@reader": {
+			"@id": "ebac:@reader",
+			"@type": "https://purl.org/signature#publicKeyPem"
+		},
+		"@signature": {
+			"@id": "ebac:@signature"
+		},
+		"privateEncrypted": {
+			"@id": "ebac:privateEncrypted"
+		},
+		"skos:altLabel": {
+			"@id": "skos:altLabel",
+			"@container": "@language"
+		},
+		"skos:broader": {
+			"@id": "skos:broader",
+			"@type": "@id"
+		},
+		"skos:broadMatch": {
+			"@id": "skos:broadMatch"
+		},
+		"skos:changeNote": {
+			"@id": "skos:changeNote",
+			"@container": "@language"
+		},
+		"skos:closeMatch": {
+			"@id": "skos:closeMatch"
+		},
+		"skos:definition": {
+			"@id": "skos:definition",
+			"@container": "@language"
+		},
+		"skos:exactMatch": {
+			"@id": "skos:exactMatch"
+		},
+		"skos:hiddenLabel": {
+			"@id": "skos:hiddenLabel",
+			"@container": "@language"
+		},
+		"skos:inScheme": {
+			"@id": "skos:inScheme",
+			"@type": "@id"
+		},
+		"skos:narrower": {
+			"@id": "skos:narrower",
+			"@type": "@id"
+		},
+		"skos:narrowMatch": {
+			"@id": "skos:narrowMatch"
+		},
+		"skos:notation": {
+			"@id": "skos:notation",
+			"@container": "@language"
+		},
+		"skos:note": {
+			"@id": "skos:note",
+			"@container": "@language"
+		},
+		"skos:prefLabel": {
+			"@id": "skos:prefLabel",
+			"@container": "@language"
+		},
+		"skos:relatedMatch": {
+			"@id": "skos:relatedMatch"
+		},
+		"skos:topConceptOf": {
+			"@id": "skos:topConceptOf",
+			"@type": "@id"
+		},
+		"ceasn:conceptKeyword": {
+			"@id": "ceasn:conceptKeyword",
+			"@container": "@language"
+		},
+		"ceasn:conceptTerm": {
+			"@id": "ceasn:conceptTerm"
+		},
+		"ceasn:creator": {
+			"@id": "dcterms:creator"
+		},
+		"ceasn:dateCopyrighted": {
+			"@id": "dcterms:dateCopyrighted"
+		},
+		"ceasn:description": {
+			"@id": "dcterms:description",
+			"@container": "@language"
+		},
+		"skos:hasTopConcept": {
+			"@id": "skos:hasTopConcept",
+			"@type": "@id"
+		},
+		"skos:historyNote": {
+			"@id": "skos:historyNote",
+			"@container": "@language"
+		},
+		"ceasn:inLanguage": {
+			"@id": "dcterms:language"
+		},
+		"ceasn:license": {
+			"@id": "dcterms:license"
+		},
+		"ceasn:publicationStatusType": {
+			"@id": "ceasn:publicationStatusType"
+		},
+		"ceasn:publisher": {
+			"@id": "dcterms:publisher"
+		},
+		"ceasn:publisherName": {
+			"@id": "ceasn:publisherName",
+			"@container": "@language"
+		},
+		"ceasn:rights": {
+			"@id": "dcterms:rights",
+			"@container": "@language"
+		},
+		"ceasn:rightsHolder": {
+			"@id": "dcterms:rightsHolder"
+		},
+		"ceasn:name": {
+			"@id": "dcterms:title",
+			"@container": "@language"
+		},
+		"ceterms:ctid": {
+			"@id": "ceterms:ctid"
+		}
+	}
+}
