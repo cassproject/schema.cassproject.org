@@ -130,6 +130,14 @@
 			"@id": "ceasn:dateCopyrighted",
 			"@type": "xsd:string"
 		},
+		"schema:dateCreated": {
+			"@id": "ceasn:dateCreated",
+			"@type": "xsd:date"
+		},
+		"schema:dateModified": {
+			"@id": "ceasn:dateModified",
+			"@type": "xsd:dateTime"
+		},
 		"dcterms:description": {
 			"@id": "ceasn:description",
 			"@language": "en-US"
