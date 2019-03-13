@@ -95,8 +95,7 @@
 			"@type": "@id"
 		},
 		"skos:notation": {
-			"@id": "skos:notation",
-			"@language": "en-US"
+			"@id": "skos:notation"
 		},
 		"skos:note": {
 			"@id": "skos:note",
@@ -149,7 +148,7 @@
 		},
 		"skos:historyNote": {
 			"@id": "skos:historyNote",
-			"@language": "en-US"
+			"@type": "@id"
 		},
 		"dcterms:language": {
 			"@id": "ceasn:inLanguage"
