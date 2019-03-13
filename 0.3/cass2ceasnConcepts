@@ -96,7 +96,6 @@
 		},
 		"skos:notation": {
 			"@id": "skos:notation",
-			"@language": "en-US"
 		},
 		"skos:note": {
 			"@id": "skos:note",
