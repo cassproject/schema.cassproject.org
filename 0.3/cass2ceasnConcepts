@@ -183,6 +183,10 @@
 		},
 		"ceterms:ctid": {
 			"@id": "ceterms:ctid"
+		},
+		"meta:changeHistory": {
+			"@id": "meta:changeHistory",
+			"@type": "@id"
 		}
 	}
 }
