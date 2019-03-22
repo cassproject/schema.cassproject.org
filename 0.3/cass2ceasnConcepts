@@ -148,7 +148,7 @@
 		},
 		"skos:historyNote": {
 			"@id": "skos:historyNote",
-			"@type": "@id"
+			"@language": "en-US"
 		},
 		"dcterms:language": {
 			"@id": "ceasn:inLanguage"
