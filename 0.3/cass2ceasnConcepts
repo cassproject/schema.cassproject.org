@@ -148,7 +148,7 @@
 		},
 		"skos:historyNote": {
 			"@id": "skos:historyNote",
-			"@type": "@id"
+			"@language": "en-US"
 		},
 		"dcterms:language": {
 			"@id": "ceasn:inLanguage"
@@ -183,6 +183,14 @@
 		},
 		"ceterms:ctid": {
 			"@id": "ceterms:ctid"
+		},
+		"meta:changeHistory": {
+			"@id": "meta:changeHistory",
+			"@type": "@id"
+		},
+		"dc:source": {
+			"@id": "ceasn:source",
+			"@type": "@id"
 		}
 	}
 }
