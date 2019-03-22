@@ -150,6 +150,9 @@
 		},
 		"ceterms:ctid": {
 			"@id": "ceterms:ctid"
+		},
+		"ceasn:source": {
+			"@id": "dc:source"
 		}
 	}
 }

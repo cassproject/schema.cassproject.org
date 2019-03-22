@@ -187,6 +187,10 @@
 		"meta:changeHistory": {
 			"@id": "meta:changeHistory",
 			"@type": "@id"
+		},
+		"dc:source": {
+			"@id": "ceasn:source",
+			"@type": "@id"
 		}
 	}
 }
