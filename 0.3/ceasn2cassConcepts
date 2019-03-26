@@ -32,6 +32,7 @@
 		"gemq": "http://purl.org/gem/qualifiers/",
 		"loc": "http://www.loc.gov/loc.terms/relators/",
 		"dcterms": "http://purl.org/dc/terms/",
+		"ceterms": "http://purl.org/ctdl/terms/",
 		"skos": "http://www.w3.org/2004/02/skos/core#",
 		"EncryptedValue": {
 			"@id": "ebac:EncryptedValue"
