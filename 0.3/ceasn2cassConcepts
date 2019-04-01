@@ -185,6 +185,10 @@
 		},
 		"ceasn:source": {
 			"@id": "dc:source"
+		},
+		"vann:usageNote": {
+			"@id": "vann:usageNote",
+			"@container": "@language"
 		}
 	}
 }
