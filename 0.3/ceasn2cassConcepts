@@ -189,6 +189,9 @@
 		"vann:usageNote": {
 			"@id": "vann:usageNote",
 			"@container": "@language"
+		},
+		"ceasn:dateCreated": {
+			"@id": "schema:dateCreated"
 		}
 	}
 }
