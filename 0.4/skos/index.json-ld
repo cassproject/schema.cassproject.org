@@ -5,7 +5,7 @@
 		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
 		"cass": "https://schema.cassproject.org/0.4/",
-		"ebac": "http://schema.cassproject.org/kbac/0.2/",
+		"ebac": "https://schema.cassproject.org/kbac/0.4/",
 		"general": "http://schema.eduworks.com/general/0.3/",
 		"schema": "http://schema.org/",
 		"ceterms": "https://purl.org/ctdl/terms/",
