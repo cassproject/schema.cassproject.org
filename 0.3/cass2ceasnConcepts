@@ -105,7 +105,11 @@
 			"@id": "skos:prefLabel",
 			"@language": "en-US"
 		},
-		"skos:relatedMatch": {
+		"skos:related": {
+			"@id": "skos:related",
+			"@type": "@id"
+		},
+        "skos:relatedMatch": {
 			"@id": "skos:relatedMatch",
 			"@type": "@id"
 		},
