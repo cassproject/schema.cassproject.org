@@ -69,8 +69,8 @@
     	    "@id": "asn:prerequisiteAlignment",
     	    "@type": "@id"
     	},
-    	"skos:relatedMatch": {
-    	    "@id": "skos:relatedMatch",
+    	"skos:related": {
+    	    "@id": "skos:related",
     	    "@type": "@id"
     	},
         "url": {

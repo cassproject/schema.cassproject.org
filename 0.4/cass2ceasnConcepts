@@ -109,10 +109,6 @@
 			"@id": "skos:related",
 			"@type": "@id"
 		},
-		"skos:relatedMatch": {
-			"@id": "skos:relatedMatch",
-			"@type": "@id"
-		},
 		"skos:topConceptOf": {
 			"@id": "skos:topConceptOf",
 			"@type": "@id"
