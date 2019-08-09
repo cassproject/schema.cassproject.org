@@ -160,8 +160,8 @@
 			"@container": "@language",
 			"@language": "en-US"
 		},
-		"skos:relatedMatch": {
-			"@id": "skos:relatedMatch"
+		"skos:related": {
+			"@id": "skos:related"
 		},
 		"ceasn:exactAlignment": {
 			"@id": "schema:sameAs"

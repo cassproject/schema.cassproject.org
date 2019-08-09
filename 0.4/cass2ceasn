@@ -231,8 +231,8 @@
 			"@id": "ceasn:publisherName",
 			"@language": "en-US"
 		},
-		"skos:relatedMatch": {
-			"@id": "skos:relatedMatch",
+		"skos:related": {
+			"@id": "skos:related",
 			"@type": "@id"
 		},
 		"url": {

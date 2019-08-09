@@ -109,8 +109,8 @@
 			"@id": "skos:prefLabel",
 			"@container": "@language"
 		},
-		"skos:relatedMatch": {
-			"@id": "skos:relatedMatch"
+		"skos:related": {
+			"@id": "skos:related"
 		},
 		"skos:topConceptOf": {
 			"@id": "skos:topConceptOf",
