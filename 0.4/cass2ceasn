@@ -247,6 +247,22 @@
 			"@id": "ceasn:exactAlignment",
 			"@type": "@id"
 		},
+		"ceasn:skillEmbodied": {
+			"@id": "ceasn:skillEmbodied",
+			"@type": "@id"
+		},
+		"ceasn:taskEmbodied": {
+			"@id": "ceasn:taskEmbodied",
+			"@type": "@id"
+		},
+		"ceasn:abilityEmbodied": {
+			"@id": "ceasn:abilityEmbodied",
+			"@type": "@id"
+		},
+		"ceasn:knowledgeEmbodied": {
+			"@id": "ceasn:knowledgeEmbodied",
+			"@type": "@id"
+		},
 		"source": {
 			"@id": "cass:source",
 			"@type": "cass:Competency"
