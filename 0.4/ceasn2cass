@@ -155,6 +155,18 @@
 		"ceasn:majorAlignment": {
 			"@id": "ceasn:majorAlignment"
 		},
+		"ceasn:skillEmbodied": {
+			"@id": "ceasn:skillEmbodied"
+		},
+		"ceasn:abilityEmbodied": {
+			"@id": "ceasn:abilityEmbodied"
+		},
+		"ceasn:taskEmbodied": {
+			"@id": "ceasn:taskEmbodied"
+		},
+		"ceasn:knowledgeEmbodied": {
+			"@id": "ceasn:knowledgeEmbodied"
+		},
 		"ceasn:publisherName": {
 			"@id": "ceasn:publisherName",
 			"@container": "@language",
