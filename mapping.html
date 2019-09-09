@@ -104,7 +104,7 @@
                 if (t[key] != null)
                     h.append("<td/>").children().last().text(join(t[key]));
                 else
-                    h.append("<td/>").children().last().append("<small/>").children().last().text("unspecified");
+                    h.append("<td/>");
                 h.append("<td/>").children().last().text(key).css("font-weight","bold");
                 for (var i = 0;i < d[key].length;i++)
                     h.append("<td/>").children().last().text(d[key][i]);
@@ -120,11 +120,9 @@
                 if (typeof val !== 'object') continue;
                 if (key.indexOf(":") == -1 && s["@vocab"] != null && s["@vocab"].indexOf("cass") != -1)
                     key = "cass:"+key;
-                if (key.indexOf(":") == -1 && s["@vocab"] != null && s["@vocab"].indexOf("case") != -1)
+                if (key.indexOf(":") == -1 && s["@vocab"] != null && s["@vocab"].indexOf("http://schema.eduworks.com/ims/case/v1p0/") != -1)
                     key = "case:"+key;
-                if (key.indexOf(":") == -1)
-                    key = "cass:"+key;
-                    key = key.replace("cass3","cass");
+                key = key.replace("cass3","cass");
 
                 if (key.indexOf(":") == -1)
                     continue;
