@@ -23,7 +23,7 @@
     <div style="background-color: #2199e8; margin-bottom: 2em;">
         <div class="row">
             <div class="large-12 columns">
-                <img style="height:100px;" src="http://www.cassproject.org/img/CASS-Logo-website-white.png">
+                <a href="index.html"><img style="height:100px;" src="http://www.cassproject.org/img/CASS-Logo-website-white.png"></a>
             </div>
         </div>
     </div>
@@ -40,7 +40,7 @@
         <h1>
         	CASS Mappings
         </h1>
-        <p class="lead">Looking to understand the CASS Object Model? You came to the right place.</p>
+        <p class="lead">This is a computed live view of what terms map to what other terms in CaSS.</p>
     </div>
     <div class="row">
         <table>
@@ -122,6 +122,8 @@
                     key = "cass:"+key;
                 if (key.indexOf(":") == -1 && s["@vocab"] != null && s["@vocab"].indexOf("http://schema.eduworks.com/ims/case/v1p0/") != -1)
                     key = "case:"+key;
+                if (key.indexOf(":") == -1)
+                    key = "cass:"+key;
                 key = key.replace("cass3","cass");
 
                 if (key.indexOf(":") == -1)
