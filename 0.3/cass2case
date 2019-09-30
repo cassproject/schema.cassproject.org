@@ -115,9 +115,6 @@
     "humanCodingScheme": {
       "@id": "ceasn:codedNotation"
     },
-    "fullStatement": {
-      "@id": "schema:name","@type":"xsd:normalizedString"
-    },
     "CFItemType": {
       "@id": "case:CFItemType","@type":"xsd:normalizedString"
     },
@@ -129,9 +126,6 @@
     },
     "subject": {
       "@id": "case:subject","@type":"xsd:normalizedString"
-    },
-    "notes": {
-      "@id": "schema:description","@type":"xsd:string"
     },
     "associationType": {
       "@id": "cass:relationType"
