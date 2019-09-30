@@ -89,8 +89,10 @@
 			"@id": "ceasn:conceptTerm"
 		},
 		"ceasn:dateCreated": {
-			"@id": "schema:dateCreated",
-			"@type": "xsd:date"
+			"@id": "schema:dateCreated"
+		},
+		"ceasn:dateModified": {
+			"@id": "schema:dateModified"
 		},
 		"ceasn:dateValidFrom": {
 			"@id": "schema:validFrom",
