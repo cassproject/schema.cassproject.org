@@ -75,6 +75,10 @@
 			"@id": "ceasn:competencyCategory",
 			"@language": "en-US"
 		},
+		"http://schema.eduworks.com/ims/case/v1p0/listEnumeration": {
+			"@id": "ceasn:listID",
+			"@type": "xsd:string"
+		},
 		"privateEncrypted": {
 			"@id": "ebac:privateEncrypted"
 		},
