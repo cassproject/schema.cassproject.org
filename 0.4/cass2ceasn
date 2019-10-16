@@ -65,7 +65,7 @@
 		},
 		"ceasn:competencyLabel": {
 			"@id": "ceasn:competencyLabel",
-			"@type": "xsd:string"
+			"@language": "en-US"
 		},
 		"dcterms:type": {
 			"@id": "ceasn:competencyCategory",
