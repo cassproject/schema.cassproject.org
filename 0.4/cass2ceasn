@@ -63,6 +63,10 @@
 			"@id": "ceasn:codedNotation",
 			"@type": "xsd:string"
 		},
+		"ceasn:competencyLabel": {
+			"@id": "ceasn:competencyLabel",
+			"@type": "xsd:string"
+		},
 		"dcterms:type": {
 			"@id": "ceasn:competencyCategory",
 			"@language": "en-US"
