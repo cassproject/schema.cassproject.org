@@ -42,6 +42,10 @@
 			"@id": "schema:name",
 			"@container": "@language"
 		},
+		"ceasn:competencyLabel": {
+			"@id": "ceasn:competencyLabel",
+			"@container": "@language"
+		},
 		"ceasn:comment": {
 			"@id": "schema:description",
 			"@container": "@language"
