@@ -182,8 +182,7 @@
 			"@language": "en-US"
 		},
 		"ceterms:ctid": {
-			"@id": "ceterms:ctid",
-			"@type":"xsd:string"
+			"@id": "ceterms:ctid"
 		},
 		"meta:changeHistory": {
 			"@id": "meta:changeHistory",
