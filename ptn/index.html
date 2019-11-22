@@ -407,9 +407,19 @@
                 <hr style="margin:0px;">
                 <div class="row">
                     <div class="columns large-3"><b>Name</b></div>
-                    <div class="columns large-3"><a href="http://schema.org/Text">Data Type</a></div>
-                    <div class="columns large-6"><a href="http://schema.org/name">Intent</a></div>
+                    <div class="columns large-4"><a href="http://schema.org/Text">Data Type</a></div>
+                    <div class="columns large-5"><a href="http://schema.org/name">Intent</a></div>
                     <div class="columns large-12">Description</div>
+                </div>
+                <hr style="margin:0px;">
+                <pre>from <a href="http://schema.org/CreativeWork">http://schema.org/CreativeWork</a></pre>
+                <hr style="margin:0px;">
+                <div class="row" typeof="rdfs:Property" resource="https://schema.cassproject.org/0.4/ptn/Task">
+                    <link property="domainIncludes" href="https://schema.org/Course" />
+                    <div class="columns large-3" property="rdfs:label">educationalAlignment</div>
+                    <div class="columns large-4"><a property="rangeIncludes" href="http://schema.org/AlignmentObject">http://schema.org/AlignmentObject</a></div>
+                    <div class="columns large-5"><a property="rangeIncludes" href="https://schema.cassproject.org/0.4/Competency">https://schema.cassproject.org/0.4/Competency</a></div>
+                    <div class="columns large-12" property="rdfs:comment">An alignment to an established educational framework.</div>
                 </div>
                 <hr style="margin:0px;">
                 <pre>from <a href="http://schema.org/Thing">http://schema.org/Thing</a></pre>
@@ -417,16 +427,16 @@
                 <div class="row" typeof="rdfs:Property" resource="http://schema.org/name">
                     <link property="domainIncludes" href="https://schema.cassproject.org/0.4/RollupRule" />
                     <div class="columns large-3" property="rdfs:label">name</div>
-                    <div class="columns large-3"><a property="rangeIncludes" href="http://schema.org/Text">http://schema.org/Text</a></div>
-                    <div class="columns large-6"><a href="http://schema.org/name">http://schema.org/name</a></div>
-                    <div class="columns large-12" property="rdfs:comment">Name of the rollup rule.</div>
+                    <div class="columns large-4"><a property="rangeIncludes" href="http://schema.org/Text">http://schema.org/Text</a></div>
+                    <div class="columns large-5"><a href="http://schema.org/name">http://schema.org/name</a></div>
+                    <div class="columns large-12" property="rdfs:comment">Name of the course.</div>
                 </div>
                 <div class="row" typeof="rdfs:Property" resource="http://schema.org/description">
                     <link property="domainIncludes" href="https://schema.cassproject.org/0.4/RollupRule" />
                     <div class="columns large-3" property="rdfs:label">description</div>
-                    <div class="columns large-3"><a property="rangeIncludes" href="http://schema.org/Text">http://schema.org/Text</a></div>
-                    <div class="columns large-6"><a href="http://schema.org/description">http://schema.org/description</a></div>
-                    <div class="columns large-12" property="rdfs:comment">Description of the rollup rule.</div>
+                    <div class="columns large-4"><a property="rangeIncludes" href="http://schema.org/Text">http://schema.org/Text</a></div>
+                    <div class="columns large-5"><a href="http://schema.org/description">http://schema.org/description</a></div>
+                    <div class="columns large-12" property="rdfs:comment">Description of the course.</div>
                 </div>
                 <hr style="margin:0px;">
                 <pre>Relevant Relations:</pre>
@@ -441,11 +451,10 @@
                 <div class="row" typeof="rdfs:Property" resource="https://schema.cassproject.org/0.4/ptn/Task">
                     <link property="domainIncludes" href="https://schema.cassproject.org/0.4/Competency" />
                     <div class="columns large-3" property="rdfs:label">hasMetric</div>
-                    <div class="columns large-4"><a property="rangeIncludes" href="http://schema.org/URL">http://schema.cassproject.org/0.4/Relation</a></div>
+                    <div class="columns large-4"><a property="rangeIncludes" href="http://schema.cassproject.org/0.4/Relation">http://schema.cassproject.org/0.4/Relation</a></div>
                     <div class="columns large-5"><a property="rangeIncludes" href="https://schema.org/QuantitativeValue">https://schema.org/QuantitativeValue</a><br><a property="rangeIncludes" href="https://schema.org/PropertyValue">https://schema.org/PropertyValue</a></div>
                     <div class="columns large-12" property="rdfs:comment">A metric used in an assessment of the performance of the student.</div>
                 </div>
-                <pre><a href="http://schema.org/Thing">...</a></pre>
             </div>
         </div>
         <div class="large-4 columns" vocab="http://schema.org/" typeof="rdfs:Class" resource="https://schema.cassproject.org/0.4/ptn/Metric">
