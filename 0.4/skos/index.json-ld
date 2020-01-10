@@ -33,10 +33,10 @@
 			"@id": "ebac:privateEncrypted"
 		},
 		"Concept": {
-			"@id": "skos:Concept"
+			"@id": "cass:skos/Concept"
 		},
 		"ConceptScheme": {
-			"@id": "skos:ConceptScheme"
+			"@id": "cass:skos/ConceptScheme"
 		}
     },
     "@graph": [

@@ -38,10 +38,10 @@
 			"@id": "ebac:EncryptedValue"
 		},
 		"skos:ConceptScheme": {
-			"@id": "skos:ConceptScheme"
+			"@id": "cass:skos/ConceptScheme"
 		},
 		"skos:Concept": {
-			"@id": "skos:Concept"
+			"@id": "cass:skos/Concept"
 		},
 		"@owner": {
 			"@id": "ebac:@owner",
