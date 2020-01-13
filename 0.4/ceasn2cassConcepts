@@ -62,8 +62,7 @@
 			"@container": "@language"
 		},
 		"skos:broader": {
-			"@id": "skos:broader",
-			"@type": "@id"
+			"@id": "skos:broader"
 		},
 		"skos:broadMatch": {
 			"@id": "skos:broadMatch"
@@ -87,12 +86,10 @@
 			"@container": "@language"
 		},
 		"skos:inScheme": {
-			"@id": "skos:inScheme",
-			"@type": "@id"
+			"@id": "skos:inScheme"
 		},
 		"skos:narrower": {
-			"@id": "skos:narrower",
-			"@type": "@id"
+			"@id": "skos:narrower"
 		},
 		"skos:narrowMatch": {
 			"@id": "skos:narrowMatch"
@@ -113,8 +110,7 @@
 			"@id": "skos:related"
 		},
 		"skos:topConceptOf": {
-			"@id": "skos:topConceptOf",
-			"@type": "@id"
+			"@id": "skos:topConceptOf"
 		},
 		"ceasn:conceptKeyword": {
 			"@id": "ceasn:conceptKeyword",
@@ -142,8 +138,7 @@
 			"@container": "@language"
 		},
 		"skos:hasTopConcept": {
-			"@id": "skos:hasTopConcept",
-			"@type": "@id"
+			"@id": "skos:hasTopConcept"
 		},
 		"skos:historyNote": {
 			"@id": "skos:historyNote",
@@ -192,6 +187,9 @@
 		},
 		"ceasn:dateCreated": {
 			"@id": "schema:dateCreated"
+		},
+		"ceasn:dateModified": {
+			"@id": "schema:dateModified"
 		}
 	}
 }
