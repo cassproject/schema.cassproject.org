@@ -106,8 +106,7 @@
 			"@type": "xsd:string"
 		},
 		"schema:creator": {
-			"@id": "ceasn:creator",
-			"@type": "@id"
+			"@id": "ceasn:creator"
 		},
 		"schema:copyrightHolder": {
 			"@id": "ceasn:rightsHolder"
@@ -169,8 +168,7 @@
 			"@type": "@id"
 		},
 		"schema:publisher": {
-			"@id": "ceasn:publisher",
-			"@type": "@id"
+			"@id": "ceasn:publisher"
 		},
 		"dc:rights": {
 			"@id": "ceasn:rights",
