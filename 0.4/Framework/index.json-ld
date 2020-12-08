@@ -769,6 +769,44 @@
                 "@language": "en",
                 "@value": "relationType"
             }
+        },
+        {
+            "@id": "https://schema.cassproject.org/0.4/Directory",
+            "@type": "rdfs:Class",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A Directory represents a grouping of frameworks and resources."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Directory"
+            },
+            "rdfs:subClassOf": {
+                "@id": "http://schema.org/CreativeWork"
+            }
+        },
+        {
+            "@id": "https://schema.cassproject.org/0.4/Framework/directory",
+            "@type": "rdfs:Property",
+            "http://schema.org/domainIncludes": {
+                "@id": "https://schema.cassproject.org/0.4/Framework"
+            },
+            "http://schema.org/rangeIncludes": [
+                {
+                    "@id": "https://schema.cassproject.org/0.4/Directory"
+                },
+                {
+                    "@id": "http://schema.org/URL"
+                }
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "URL of the directory this framework is in."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "directory"
+            }
         }
     ]
 }
