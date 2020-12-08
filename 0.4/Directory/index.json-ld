@@ -19,7 +19,7 @@
                 {
                     "@language": "en",
                     "@value": "Name of the directory."
-                },
+                }
             ],
             "rdfs:label": {
                 "@language": "en",
