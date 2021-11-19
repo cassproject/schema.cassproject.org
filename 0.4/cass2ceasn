@@ -109,8 +109,9 @@
 			"@id": "ceasn:creator",
 			"@type": "@id"
 		},
-		"schema:copyrightHolder": {
-			"@id": "ceasn:rightsHolder"
+		"creator": {
+			"@id": "ceasn:creator",
+			"@type": "@id"
 		},
 		"schema:copyrightYear": {
 			"@id": "ceasn:dateCopyrighted",
@@ -280,7 +281,8 @@
 			"@type": "cass:Competency"
 		},
 		"schema:inLanguage": {
-			"@id": "ceasn:inLanguage"
+			"@id": "ceasn:inLanguage",
+			"@type": "xsd:language"
 		},
 		"ceasn:repositoryDate": {
 			"@id": "ceasn:repositoryDate"
@@ -313,6 +315,10 @@
 		"evidence": {
 			"@id": "cass:evidence",
 			"@type": "schema:Thing"
+		},
+		"ceasn:author": {
+			"@id": "ceasn:author",
+			"@type": "xsd:string"
 		}
 	}
 }
