@@ -319,6 +319,66 @@
 		"ceasn:author": {
 			"@id": "ceasn:author",
 			"@type": "xsd:string"
+		},
+		"ceterms:environmentalHazardType": {
+			"@id": "ceterms:environmentalHazardType",
+			"@type": "@id"
+		},
+		"ceterms:performanceLevelType": {
+			"@id": "ceterms:performanceLevelType",
+			"@type": "@id"
+		},
+		"ceterms:physicalCapabilityType": {
+			"@id": "ceterms:physicalCapabilityType",
+			"@type": "@id"
+		},
+		"ceterms:sensoryCapabilityType": {
+			"@id": "ceterms:sensoryCapabilityType",
+			"@type": "@id"
+		},
+		"ceasn:substantiatingResource": {
+			"@id": "ceasn:substantiatingResource",
+			"@type": "@id"
+		},
+		"ceasn:substantiatingCompetencyFramework": {
+			"@id": "ceasn:substantiatingCompetencyFramework",
+			"@type": "@id"
+		},
+		"ceasn:substantiatingCredential": {
+			"@id": "ceasn:substantiatingCredential",
+			"@type": "@id"
+		},
+		"ceasn:substantiatingJob": {
+			"@id": "ceasn:substantiatingJob",
+			"@type": "@id"
+		},
+		"ceasn:substantiatingOccupation": {
+			"@id": "ceasn:substantiatingOccupation",
+			"@type": "@id"
+		},
+		"ceasn:substantiatingOrganization": {
+			"@id": "ceasn:substantiatingOrganization",
+			"@type": "@id"
+		},
+		"ceasn:substantiatingTask": {
+			"@id": "ceasn:substantiatingTask",
+			"@type": "@id"
+		},
+		"ceasn:substantiatingWorkRole": {
+			"@id": "ceasn:substantiatingWorkRole",
+			"@type": "@id"
+		},
+		"ceasn:sourceDocumentation": {
+			"@id": "ceasn:sourceDocumentation",
+			"@type": "@id"
+		},
+		"ceasn:inferredCompetency": {
+			"@id": "ceasn:inferredCompetency",
+			"@type": "@id"
+		},
+		"ceterms:hasWorkforceDemand": {
+			"@id": "ceterms:hasWorkforceDemand",
+			"@type": "@id"
 		}
 	}
 }
