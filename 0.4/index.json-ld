@@ -2,6 +2,7 @@
 	"@context": {
 		"@vocab": "https://schema.cassproject.org/0.4/",
 		"ceasn": "https://purl.org/ctdlasn/terms/",
+		"ceterms": "https://purl.org/ctdl/terms/",
 		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
 		"cass": "https://schema.cassproject.org/0.4/",
