@@ -189,6 +189,21 @@
 		},
 		"ceasn:repositoryDate": {
 			"@id": "ceasn:repositoryDate"
+		},
+		"ceterms:description": {
+			"@id": "schema:description",
+			"@container": "@language"
+		},
+		"ceterms:name": {
+			"@id": "schema:name",
+			"@container": "@language"
+		},
+		"ceterms:keyword": {
+			"@id": "schema:keywords",
+			"@container": "@language"
+		},
+		"ceterms:inLanguage": {
+			"@id": "schema:inLanguage"
 		}
 	}
 }
