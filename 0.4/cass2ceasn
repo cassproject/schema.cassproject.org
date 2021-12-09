@@ -379,6 +379,10 @@
 		"ceterms:hasWorkforceDemand": {
 			"@id": "ceterms:hasWorkforceDemand",
 			"@type": "@id"
+		},
+		"ceterms:isMemberOf": {
+			"@id": "ceterms:isMemberOf",
+			"@type": "@id"
 		}
 	}
 }
