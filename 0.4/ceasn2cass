@@ -21,6 +21,9 @@
 		"ceasn:CompetencyFramework": {
 			"@id": "cass:Framework"
 		},
+		"ceterms:Collection": {
+			"@id": "cass:Framework"
+		},
 		"ceasn:Competency": {
 			"@id": "cass:Competency"
 		},
