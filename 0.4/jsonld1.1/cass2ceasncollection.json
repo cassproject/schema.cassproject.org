@@ -63,8 +63,7 @@
 		},
 		"ceterms:hasMember": {
 			"@id": "ceterms:hasMember",
-			"@type": "@id",
-			"@container": "@list"
+			"@type": "@id"
 		},
 		"ceterms:classification": {
 			"@id": "ceterms:classification",
