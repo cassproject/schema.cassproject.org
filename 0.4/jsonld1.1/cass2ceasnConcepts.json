@@ -131,10 +131,6 @@
 			"@type": "@id",
 			"@container": "@list"
 		},
-		"skos:historyNote": {
-			"@id": "skos:historyNote",
-			"@language": "en-US"
-		},
 		"ceasn:license": {
 			"@id": "ceasn:license",
 			"@type": "@id"

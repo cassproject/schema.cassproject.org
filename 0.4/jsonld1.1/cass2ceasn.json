@@ -33,8 +33,16 @@
 			"@id": "ceasn:listID",
 			"@type": "xsd:string"
 		},
+		"ceasn:altCodedNotation": {
+			"@id": "ceasn:altCodedNotation",
+			"@type": "xsd:string"
+		},
 		"ceasn:codedNotation": {
 			"@id": "ceasn:codedNotation",
+			"@type": "xsd:string"
+		},
+		"ceasn:localSubject": {
+			"@id": "ceasn:localSubject",
 			"@type": "xsd:string"
 		},
 		"ceasn:competencyLabel": {
@@ -44,7 +52,7 @@
 		"ceasn:competencyCategory": {
 			"@id": "ceasn:competencyCategory",
 			"@language": "en-US"
-		},
+		},		
 		"ceasn:name": {
 			"@id": "ceasn:name",
 			"@language": "en-US"
@@ -143,6 +151,14 @@
 		},
 		"ceasn:isChildOf": {
 			"@id": "ceasn:isChildOf",
+			"@type": "@id"
+		},
+		"ceasn:crossSubjectReference": {
+			"@id": "ceasn:crossSubjectReference",
+			"@type": "@id"
+		},
+		"ceasn:comprisedOf": {
+			"@id": "ceasn:comprisedOf",
 			"@type": "@id"
 		},
 		"ceasn:derivedFrom": {
