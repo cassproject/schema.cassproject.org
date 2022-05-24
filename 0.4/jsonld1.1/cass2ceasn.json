@@ -342,6 +342,10 @@
 			"@id": "ceasn:inferredCompetency",
 			"@type": "@id"
 		},
+		"ceterms:hasTask": {
+			"@id": "ceterms:hasTask",
+			"@type": "@id"
+		},
 		"ceterms:hasWorkforceDemand": {
 			"@id": "ceterms:hasWorkforceDemand",
 			"@type": "@id"
