@@ -19,7 +19,5 @@
 	"ceasn:rightsHolder": "dcterms:rightsHolder",
 	"ceasn:name": "dcterms:title",
 	"rdfs:label": "dcterms:title",
-	"ceasn:source": "dc:source",
-	"ceasn:dateCreated": "schema:dateCreated",
-	"ceasn:dateModified": "schema:dateModified"
+	"ceasn:source": "dc:source"
 }

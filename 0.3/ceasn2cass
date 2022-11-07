@@ -66,9 +66,6 @@
 		"ceasn:creator": {
 			"@id": "schema:creator"
 		},
-		"ceasn:rightsHolder": {
-			"@id": "schema:copyrightHolder"
-		},
 		"ceasn:dateCopyrighted": {
 			"@id": "schema:copyrightYear"
 		},
@@ -88,8 +85,12 @@
 			"@id": "ceasn:conceptTerm"
 		},
 		"ceasn:dateCreated": {
-			"@id": "schema:dateCreated",
+			"@id": "ceasn:dateCreated",
 			"@type": "xsd:date"
+		},
+		"ceasn:dateModified": {
+			"@id": "ceasn:dateModified",
+			"@type": "xsd:dateTime"
 		},
 		"ceasn:dateValidFrom": {
 			"@id": "schema:validFrom",
