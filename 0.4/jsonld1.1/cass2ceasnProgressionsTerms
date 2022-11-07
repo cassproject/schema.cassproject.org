@@ -1,6 +1,6 @@
 {
-	"ConceptScheme": "ceasn:ProgressionModel",
-	"Concept": "ceasn:ProgressionLevel",
+	"ConceptScheme": "asn:ProgressionModel",
+	"Concept": "asn:ProgressionLevel",
 	"@owner": "ebac:@owner",
 	"@reader": "ebac:@reader",
 	"@signature": "ebac:@signature",
