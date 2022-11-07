@@ -101,9 +101,6 @@
 			"@id": "ceasn:creator",
 			"@type": "@id"
 		},
-		"schema:copyrightHolder": {
-			"@id": "ceasn:rightsHolder"
-		},
 		"schema:copyrightYear": {
 			"@id": "ceasn:dateCopyrighted",
 			"@type": "xsd:string"
@@ -133,10 +130,14 @@
 			"@type": "@id"
 		},
 		"schema:dateCreated": {
+			"@id": "ceasn:repositoryDate",
+			"@type": "xsd:date"
+		},
+		"ceasn:dateCreated": {
 			"@id": "ceasn:dateCreated",
 			"@type": "xsd:date"
 		},
-		"schema:dateModified": {
+		"ceasn:dateModified": {
 			"@id": "ceasn:dateModified",
 			"@type": "xsd:dateTime"
 		},
