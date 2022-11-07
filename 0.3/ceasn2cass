@@ -92,6 +92,10 @@
 			"@id": "ceasn:dateModified",
 			"@type": "xsd:dateTime"
 		},
+		"ceasn:repositoryDate": {
+			"@id": "ceasn:repositoryDate",
+			"@type": "xsd:date"
+		},
 		"ceasn:dateValidFrom": {
 			"@id": "schema:validFrom",
 			"@type": "xsd:date"
@@ -168,9 +172,6 @@
 		},
 		"ceasn:inLanguage": {
 			"@id": "schema:inLanguage"
-		},
-		"ceasn:repositoryDate": {
-			"@id": "ceasn:repositoryDate"
 		}
 	}
 }

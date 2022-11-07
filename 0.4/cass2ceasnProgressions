@@ -93,7 +93,7 @@
 			"@id": "ceasn:dateCopyrighted",
 			"@type": "xsd:string"
 		},
-		"schema:dateCreated": {
+		"ceasn:repositoryDate": {
 			"@id": "ceasn:repositoryDate",
 			"@type": "xsd:date"
 		},

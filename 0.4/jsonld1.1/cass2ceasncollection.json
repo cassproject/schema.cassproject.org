@@ -49,7 +49,7 @@
 			"@id": "ceterms:description",
 			"@language": "en-us"
 		},
-		"schema:dateCreated": {
+		"ceasn:repositoryDate": {
 			"@id": "ceasn:repositoryDate",
 			"@type": "xsd:date"
 		},
