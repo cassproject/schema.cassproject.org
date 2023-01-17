@@ -105,6 +105,10 @@
 			"@id": "ceasn:author",
 			"@type": "@id"
 		},
+		"author": {
+			"@id": "ceasn:author",
+			"@type": "@id"
+		},
 		"schema:creator": {
 			"@id": "ceasn:creator",
 			"@type": "@id"
