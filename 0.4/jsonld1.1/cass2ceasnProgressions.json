@@ -45,6 +45,9 @@
 			"@id": "skos:definition",
 			"@language": "en-us"
 		},
+		"skos:notation": {
+			"@id": "skos:notation"
+		},
 		"skos:narrower": {
 			"@id": "skos:narrower",
 			"@type": "@id",

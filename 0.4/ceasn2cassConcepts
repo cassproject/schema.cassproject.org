@@ -95,8 +95,7 @@
 			"@id": "skos:narrowMatch"
 		},
 		"skos:notation": {
-			"@id": "skos:notation",
-			"@container": "@language"
+			"@id": "skos:notation"
 		},
 		"skos:note": {
 			"@id": "skos:note",
